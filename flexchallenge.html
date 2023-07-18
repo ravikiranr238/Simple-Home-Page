@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexchallenge</title>
+    <style>
+        *{
+            margin:0px;
+            text-decoration:none;
+            color:white;
+        }
+        .flex{
+            display:flex;
+            flex-direction:row;
+            position:relative;
+            width:100%;
+            height:100%;
+            align-items:flex-end;
+            background-color:rgba(221, 204, 16, 0.962);
+        }
+        .item{
+            width:100%;
+            background-color:whitesmoke;
+            margin:10px;
+            overflow:hidden;
+            border-radius:0px;
+            box-shadow:2px 5px rgba(0, 0, 0, 0.462);
+            transition:box-shadow,border-radius;
+           }
+           .item:hover{
+               box-shadow:2px 3px red;
+               border-radius:10px;
+           }
+           h3{
+               text-align: center;
+               font-weight:bold;
+               color:black;
+           }
+        #image{
+            height:150px;
+            position:relative;
+            width:100%;
+        }
+        #box1{
+            position:relative;
+            height:80%;
+        }
+        #box2{
+            position:relative;
+            height:90%;
+        }
+        #box3{
+            position:relative;
+            height:85%;
+        }
+        h5{
+            padding:7px;
+            color:black;
+            
+        }
+        header{
+            background-color:rgba(232, 17, 175, 0.881);
+            height:100px;
+            display:flex;
+            position:sticky;
+            color:white;
+            justify-content: center;
+            align-items:center;
+            font-size: 30px;
+            font-weight:bold;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        nav{
+            height:40px;
+            background-color:black;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            padding-left: 10px;
+           
+        }
+        .read{
+            height:20px;
+            border:2px solid white;
+            border-radius:5px;
+            margin:2px;
+            position:relative;
+            text-align: center;
+            background-color:black;
+            animation:bounce 1s ease 0s infinite both;
+        }
+        @keyframes bounce{
+            0%{
+                border: 2px solid red;
+            }
+        }
+        .read:hover{
+            background-color:green;
+        }
+        footer{
+            background-color:rgb(204, 0, 255);
+            height:10px;
+            padding:20px;
+            padding-top:5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Environmental Education
+    </header>
+    <nav>
+        <a href="" >HOME |</a>&nbsp;
+        <a href="" >FOREST |</a>&nbsp;
+        <a href="" >RIVER |</a>&nbsp;
+        <a href="" >AIR |</a>&nbsp;
+        <a href="">Log-In/Log-Out </a>
+    </nav>
+    <main>
+        <div class="flex">
+        <div class="item" id="box1">
+            <img src="https://us.123rf.com/450wm/pramotephotostock/pramotephotostock1810/pramotephotostock181000072/110613246-hand-holding-plant-with-bokeh-and-nature-background-save-the-world-and-world-environment-day-concept.jpg?ver=6" id="image">
+            <h3>DO AFFORESTATION</h2>
+            <h5>From childhood, we have heard that trees are our best friend but in practical life, we didn’t see anyone who treats trees as their friends. Although they are the most valuable life source on the earth. They benefit every life form in a direct or indirect way. And the earth is connected to heard that trees are our best friend but in practical life,heard that trees are our best friend but in practical life,heard that trees are our best friend but in practical life, them to maintain a natural balance. In this essay on save trees, we are discussing the reason why our friends need saving.</h5>
+            <div class="read">Read more</div>
+        </div>
+        <div class="item" id="box2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ584Upe9QfRrwoaUUCr5a9kOpCwRxSnHrhWA&usqp=CAU" id="image">
+            <h3>SAVE WATER</h3>
+           <h5>Water is the most important and valuable natural resource on Earth. It sustains all life. There is no life without water. Water is not only important for human beings but for the entire ecosystem. Without enough water, the existence of humans, as well as animals, is next to impossible. Aftare the cause of many respiratory an the  most important natural resource for the survival of an creature on this planet, be it a small worm, plant, or full-grown tree.  Animals and plants  cannot survive without water. About 71% of Earth’s surface is covered with water. Unfortunately, only 3% of the water available  is freshwater. About two-thirds of the freshwater lies in the form of frozen glaciers and ice caps. The rest of the small portion is available in the form of groundwater and surface water.</h5>
+           <div class="read" id="text">Read more</div>
+        </div>
+        <div class="item" id="box3">
+            <img src="https://images.alphacoders.com/753/753648.jpg" id="image">
+            <h3>PURIFY AIR</h3>
+            <h5>Earlier the air we breathe in use to be pure and fresh. But, due to increasing industrialization and concentration of poisonous gases in the environment the air is getting more and more toxic day by day. Also, these gases are the cause of many respiratory and other diseases. Moreover, the rapidly increasing human activities like the b are the cause of many respiratory and other diseases. Moreover, the rapidly increasing human activities like the burning of fossil fuels, deforestation is the major cause of air pollution.</h5>
+            <div class="read">Read more</div>
+        </div>
+         </div>
+    <footer>
+        <a href="">Contact-us |</a>&nbsp;
+        <a href="">help |</a>&nbsp;
+        <a href="">Suggestions |</a>&nbsp;
+        <a href="">Learn-more |</a>&nbsp;
+        <a href="">Copy-right</a>
+    </footer>
+    </main>
+</body>
+</html>
